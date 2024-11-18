@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        New script teamdynamix.com
+// @name        Change Management Heavy Lifter
 // @namespace   Violentmonkey Scripts
 // @match       https://villanova.teamdynamix.com/TDNext/Apps/2939/Tickets/New*
 // @grant       none
