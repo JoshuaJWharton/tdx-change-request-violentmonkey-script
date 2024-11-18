@@ -103,7 +103,7 @@ In Boomi Integration:
     const modalHTML = `
         <div id="boomiModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 10000; justify-content: center; align-items: center;">
             <div style="background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
-                <p>Hi Josh! Is this a Boomi request?</p>
+                <p>Is this a Boomi request?</p>
                 <button id="boomiYes" style="margin-right: 10px;">Yes</button>
                 <button id="boomiNo">No</button>
             </div>
