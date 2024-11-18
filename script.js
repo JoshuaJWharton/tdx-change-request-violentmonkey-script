@@ -6,7 +6,7 @@
 // @version     1.0.2
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @author      -
-// @description 11/18/2024, 02:24:00 PM
+// @description 11/18/2024, 02:37:00 PM
 // ==/UserScript==
 function setValues() {
           const processVersion = prompt("Enter the process name and version:");
