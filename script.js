@@ -3,10 +3,10 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://villanova.teamdynamix.com/TDNext/Apps/2939/Tickets/New*
 // @grant       none
-// @version     1.0
+// @version     1.0.1
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // @author      -
-// @description 11/18/2024, 10:55:56 AM
+// @description 11/18/2024, 02:24:00 PM
 // ==/UserScript==
 function setValues() {
           const processVersion = prompt("Enter the process name and version:");
@@ -103,7 +103,7 @@ In Boomi Integration:
     const modalHTML = `
         <div id="boomiModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 10000; justify-content: center; align-items: center;">
             <div style="background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
-                <p>Is this a Boomi request?</p>
+                <p>Hi Josh! Is this a Boomi request?</p>
                 <button id="boomiYes" style="margin-right: 10px;">Yes</button>
                 <button id="boomiNo">No</button>
             </div>
