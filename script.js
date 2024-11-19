@@ -96,7 +96,7 @@ In Boomi Integration:
 }
 
 
-(function () {
+function CheckBoomi() {
     'use strict';
 
     // Inject a modal into the page
@@ -126,5 +126,30 @@ In Boomi Integration:
     $('#boomiNo').on('click', function () {
         $('#boomiModal').fadeOut();
     });
-})();
+}
 
+const targetNode = document.querySelector('#select2-chosen-9');
+
+        if (targetNode) {
+            // Create a MutationObserver to watch for changes in the span's content
+            const observer = new MutationObserver((mutationsList) => {
+                for (const mutation of mutationsList) {
+                    if (mutation.type === 'childList' || mutation.type === 'characterData') {
+                        const newContent = targetNode.textContent.trim();
+                        console.log('Value is ' + newContent);
+                        if (newContent === 'UNIT Change 2.0') {
+                            CheckBoomi();
+                        }
+                    }
+                }
+            });
+
+            // Configure the observer to watch child nodes and character data
+            observer.observe(targetNode, {
+                childList: true,
+                subtree: true,
+                characterData: true
+            });
+        } else {
+            console.error('Element #select2-chosen-9 not found.');
+        }
