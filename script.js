@@ -128,6 +128,8 @@ function CheckBoomi() {
     });
 }
 
+CheckBoomi();
+/*
 const targetNode = document.querySelector('#select2-chosen-9');
 
         if (targetNode) {
@@ -153,3 +155,4 @@ const targetNode = document.querySelector('#select2-chosen-9');
         } else {
             console.error('Element #select2-chosen-9 not found.');
         }
+*/
